@@ -1,2 +1,2 @@
-# Setup
-Script to install and configure all dev tools on a new machine 
+# ToolBox 
+A tool box repo for any tools/scripts I need
