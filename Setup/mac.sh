@@ -49,6 +49,15 @@ brew install ripgrep
 echo "Installing tree..."
 brew install tree
 
+echo "Installing zsh..."
+brew install zsh fzf
+
+git clone https://github.com/zsh-users/zsh-autosuggestions \
+${ZDOTDIR:-$HOME}/.zsh/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting \
+  ${ZDOTDIR:-$HOME}/.zsh/zsh-syntax-highlighting
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git \
+  ${ZDOTDIR:-$HOME}/.zsh/powerlevel10k
 
 
 # Set OS Defaults
@@ -76,22 +85,25 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 
 # Install Desktop Applications
 echo "Installing Docker..."
-brew cask install docker
+brew install --cask docker
 
 echo "Installing VSCode..."
-brew cask install visual-studio-code
+brew install --cask visual-studio-code
 
 echo "Installing iTerm..."
-brew cask install iterm2
+brew install --cask iterm2
 
 echo "Installing Fire Fox..."
-brew cask install firefox
+brew install --cask firefox
 
 echo "Installing Slack..."
-brew cask install slack
+brew install --cask slack
 
-echo "Installing Sublime Text..."
-brew cask install sublime-text
+echo "Installing mac-mouse-fix"
+brew install --cask mac-mouse-fix
+
+echo "Installing rectangle"
+brew install --cask rectangle
 
 echo "Development Workspace Ready [✔]"
 echo ""
