@@ -1,0 +1,4 @@
+docker.docker
+editorconfig.editorconfig
+esbenp.prettier-vscode
+hashicorp.terraform
